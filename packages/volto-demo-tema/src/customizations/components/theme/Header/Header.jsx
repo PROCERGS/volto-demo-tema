@@ -9,7 +9,7 @@ import cx from 'classnames';
 import IntranetSearchWidget from '@kitconcept/volto-light-theme/components//SearchWidget/IntranetSearchWidget';
 import SimboloRS from '../../../../components/SimboloRS/SimboloRS';
 import { SearchBar } from '../../../../components/SearchBar/SearchBar';
-import SearchWidget from '@plone/volto/components/theme/SearchWidget/SearchWidget';
+import SearchWidget from '../../../../components/SearchWidget/SearchWidget';
 
 import {
   Anontools,
