@@ -114,7 +114,7 @@ const IntranetHeader = ({
               <IntranetSearchWidget />
             </div>
           </div>
-          <Navigation pathname={pathname} />
+         
           <MobileNavigation pathname={pathname} />
         </div>
       </div>
@@ -148,7 +148,7 @@ const Header = (props) => {
     >
       <BarraEstado />
       <BarraAcessibilidade />
-      <Container layout>
+      <Container>
         {intranetHeader ? (
           <IntranetHeader
             pathname={pathname}
