@@ -26,12 +26,12 @@
 }
 
 .acess-ul > * {
-  color: #1a7235;
+  color: $green-matriz-link;
   font-size: 12px;
 }
 
 .acess-ul > * :hover {
-  color: #f8f8f8;
+  color: $green-matriz-link-activated;
   cursor: pointer;
 }
 

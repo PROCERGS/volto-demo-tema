@@ -8,7 +8,7 @@
       font-size: unset;
     }
     a:hover {
-      color: #f8f8f8 !important;
+      color: $green-matriz-link-activated !important;
     }
   }
 }
@@ -32,13 +32,36 @@
 }
 
 .header-titulo {
+  color: black;
   margin-left: 30px;
   font-size: 24px;
   font-weight: 375;
   text-align: left;
 }
 
+.header-titulo:hover {
+  color: $green-matriz-link-activated;
+}
+
 .header-wrapper .header .logo-nav-wrapper {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .logo-nav-wrapper, .tools-wrapper {
+    width: 750px;
+    align-self: center;
+  }
+}
+@media (min-width: 992px) {
+  .logo-nav-wrapper ,.tools-wrapper {
+    width: 970px;
+    align-self: center;
+  }
+}
+@media (min-width: 1200px) {
+  .logo-nav-wrapper, .tools-wrapper {
+    width: 1170px;
+    align-self: center;
+  }
+}

@@ -62,7 +62,7 @@ const InternetHeader = ({
         <div className="logo-nav-wrapper">
           <div className="simbolo">
             <SimboloRS />
-            <div className="header-titulo">{siteTitle}</div>
+            <a className="header-titulo" href='/'>{siteTitle}</a>
           </div>
           <Navigation pathname={pathname} />
           <MobileNavigation pathname={pathname} />
