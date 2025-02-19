@@ -20,15 +20,14 @@ jobs:
       - name: Update Corepack
         run: npm install -g corepack@latest
 
-      # Option 2 (alternative): or disable Corepack checks
+      # Option 2 (alternative): Disable strict Corepack safety
       # - name: Disable strict Corepack safety
       #   run: echo "COREPACK_ENABLE_STRICT_SAFETY=0" >> $GITHUB_ENV
 
-      # (Optional) If you're using tput inside your script, set TERM
+      # (Optional) If you're using tput inside your script, set TERM so it won't fail
       - name: Set TERM
         run: echo "TERM=xterm" >> $GITHUB_ENV
 
-      # Install dependencies and run your make install
       - name: Install
         run: make install
 
