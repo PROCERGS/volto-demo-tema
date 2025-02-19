@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20  # Or 18 if Node 20 keeps failing
+
+      # Option 1: Update Corepack (so TUF key checks succeed)
+      - name: Update Corepack
+        run: npm install -g corepack@latest
+
+      # Option 2 (alternative): or disable Corepack checks
+      # - name: Disable strict Corepack safety
+      #   run: echo "COREPACK_ENABLE_STRICT_SAFETY=0" >> $GITHUB_ENV
+
+      # (Optional) If you're using tput inside your script, set TERM
+      - name: Set TERM
+        run: echo "TERM=xterm" >> $GITHUB_ENV
+
+      # Install dependencies and run your make install
+      - name: Install
+        run: make install
+
+      - name: Build
+        run: make build
