@@ -77,16 +77,16 @@
 }
 
 .prog-grid-item .prog-content h3 {
+  display: -webkit-box;
+  overflow: hidden;
   margin: 0;
+  -webkit-box-orient: vertical;
   color: #333;
   font-size: 18px;
   font-weight: 350;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
   text-align: left;
+  text-overflow: ellipsis;
 }
 
 .prog-grid-item .prog-content {
