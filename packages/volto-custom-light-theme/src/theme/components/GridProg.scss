@@ -81,10 +81,16 @@
   color: #333;
   font-size: 18px;
   font-weight: 350;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
 }
 
 .prog-grid-item .prog-content {
-  min-height: 50px;
+  min-height: 60px;
 }
 
 .prog-grid-item > * {
