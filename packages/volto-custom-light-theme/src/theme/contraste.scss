@@ -94,6 +94,10 @@
   background-color: unset !important;
 }
 
+.high-contrast #buscageralTextBox {
+  color: #fff !important;
+}
+
 //navigation
 .high-contrast .item.active::before {
   border-color: #fff !important;
@@ -170,9 +174,23 @@
   background-color: #000 !important;
 }
 
+//sitemap
+.high-contrast #page-sitemap {
+  color: #fff !important;
+}
+
+.high-contrast #page-sitemap a {
+  color: #fff !important;
+}
+
+.high-contrast #page-sitemap a:hover {
+  color: #bababa !important;
+}
+
 //submenu
 .high-contrast .submenu {
-  border: 2px #fff solid !important;
+  border-top: 2px #fff solid !important;
+  border-bottom: 2px #fff solid !important;
   background-color: #000 !important;
 }
 
@@ -185,4 +203,25 @@
 .high-contrast .card-container {
   border: 2px #fff solid !important;
   background-color: #000 !important;
+}
+
+//ui
+.high-contrast .ui.label {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.high-contrast .ui.segment {
+  background-color: #000 !important;
+  label {
+    color: #fff !important;
+  }
+  input {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  textarea {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
 }
