@@ -99,6 +99,18 @@
 }
 
 //navigation
+.high-contrast .btn-scroll {
+  border: 3px solid #000 !important;
+  background-color: #fff !important;
+  box-shadow: unset;
+  color: #000 !important;
+  &:hover {
+    border-color: #fff !important;
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+
 .high-contrast .item.active::before {
   border-color: #fff !important;
 }

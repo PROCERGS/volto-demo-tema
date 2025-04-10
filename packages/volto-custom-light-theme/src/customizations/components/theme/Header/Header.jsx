@@ -90,7 +90,8 @@ const InternetHeader = ({
               bottom: '45px',
               right: '10%',
               zIndex: '9999',
-              boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)',
+              boxShadow: '0 2px 5px rgba(0, 0, 0, 0.4)',
+              border: '3px solid transparent',
             }}
           >
             <FontAwesomeIcon icon={faChevronUp} />

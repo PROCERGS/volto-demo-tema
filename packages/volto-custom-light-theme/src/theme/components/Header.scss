@@ -18,6 +18,10 @@
 .btn-scroll {
   animation-name: appear;
   animation-timeline: scroll(y);
+  &:hover {
+    border-color: #fff !important;
+    background-color: $green-matriz-link-activated !important;
+  }
 }
 
 @keyframes appear {
