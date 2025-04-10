@@ -17,9 +17,15 @@
 @import 'components/Sitemap.scss';
 @import 'carrossel.scss';
 @import 'lista_noticias.scss';
+@import 'components/GridProg.scss';
+@import './contraste.scss';
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
