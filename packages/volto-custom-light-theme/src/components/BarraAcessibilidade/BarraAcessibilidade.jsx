@@ -112,7 +112,18 @@ const BarraAcessibilidade = () => {
       <div className="acess-left">
         <ul className="acess-ul">
           <li>
-            <span onClick={toggleContrast} style={{ cursor: 'pointer' }}>
+            <span
+              onClick={toggleContrast}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  toggleContrast();
+                }
+              }}
+              role="button"
+              tabIndex={0}
+              style={{ cursor: 'pointer' }}
+            >
               <FontAwesomeIcon
                 icon={faCircleHalfStroke}
                 height={'16px'}
