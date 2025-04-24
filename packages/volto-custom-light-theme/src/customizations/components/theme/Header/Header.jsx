@@ -6,7 +6,6 @@ import config from '@plone/volto/registry';
 import HeaderContainer from '../../../../components/HeaderContainer/HeaderContainer';
 import BarraEstado from '../../../../components/BarraEstado/BarraEstado';
 import BarraAcessibilidade from '../../../../components/BarraAcessibilidade/BarraAcessibilidade';
-import { Container } from 'semantic-ui-react';
 
 const messages = defineMessages({
   siteLabel: {
@@ -18,7 +17,6 @@ const messages = defineMessages({
 const Header = (props) => {
   const { pathname } = props;
   let siteLabel = config.settings.siteLabel;
-  const intranetHeader = config.settings.intranetHeader;
   const token = useSelector((state) => state.userSession.token);
   const siteAction = useSelector(
     (state) => state.content.data?.['@components']?.actions?.site_actions,
