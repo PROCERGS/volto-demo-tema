@@ -56,7 +56,7 @@ const HeaderContainer = ({
             </a>
           </div>
           <Navigation pathname={pathname} />
-          <MobileNavigation pathname={pathname} />
+          <MobileNavigation pathname={pathname} className="navigation" />
           <div className="search-wrapper navigation-desktop">
             <div className="search">
               <SearchWidget />
