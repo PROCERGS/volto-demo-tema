@@ -49,6 +49,7 @@ const HeaderContainer = ({
           )}
         </div>
         <div className="logo-nav-wrapper">
+          <MobileNavigation pathname={pathname} className="mobile-nav" />
           <div className="simbolo">
             <SimboloRS />
             <a className="header-titulo" href="/">
@@ -56,7 +57,7 @@ const HeaderContainer = ({
             </a>
           </div>
           <Navigation pathname={pathname} />
-          <MobileNavigation pathname={pathname} className="navigation" />
+
           <div className="search-wrapper navigation-desktop">
             <div className="search">
               <SearchWidget />

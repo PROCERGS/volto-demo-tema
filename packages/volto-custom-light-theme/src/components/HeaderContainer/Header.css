@@ -27,3 +27,12 @@
 .header-wrapper .header .logo-nav-wrapper {
   align-items: center;
 }
+
+@media only screen and (min-width: 750px) {
+  .mobile-nav {
+    display: flex !important;
+  }
+}
+.mobile-nav {
+  display: flex !important;
+}
