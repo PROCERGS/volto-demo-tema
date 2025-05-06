@@ -8,7 +8,6 @@ import './Header.css';
 import {
   Anontools,
   LanguageSelector,
-  Navigation,
   UniversalLink,
 } from '@plone/volto/components';
 
